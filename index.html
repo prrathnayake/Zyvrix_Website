@@ -11,12 +11,12 @@
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="assets/img/og-home.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="" />
     <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" />
-    <link rel="icon" href="assets/img/favicon.svg" />
+    <meta name="twitter:image" content="assets/img/og-home.png" />
+    <link rel="icon" href="assets/img/Zyvrix-LOGO.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/env.js"></script>
     <script type="module" src="assets/js/data/index.js"></script>
@@ -84,14 +84,48 @@
           </div>
         </div>
         <div class="hero-art" aria-hidden="true">
-          <div class="blob"></div>
+          <img id="heroImage" class="hero-visual" src="assets/img/hero-automation.png" alt="Automation collage" />
           <div class="hero-metrics" id="heroMetrics" aria-live="polite"></div>
         </div>
+      </section>
+
+      <section class="container brand-logos" aria-label="Trusted partners">
+        <p class="eyebrow" id="logosEyebrow"></p>
+        <div class="logos-list" id="logosList"></div>
+      </section>
+
+      <section class="container overview js-reveal" aria-labelledby="overviewHeading">
+        <div class="overview-card" id="overviewCard"></div>
+      </section>
+
+      <section class="container mission js-reveal" aria-label="Vision and mission">
+        <div class="mission-grid">
+          <article class="mission-card" id="visionCard"></article>
+          <article class="mission-card" id="missionCard"></article>
+        </div>
+      </section>
+
+      <section class="container values js-reveal" aria-labelledby="valuesHeading">
+        <div class="section-header">
+          <p class="eyebrow" id="valuesEyebrow"></p>
+          <h2 id="valuesHeading"></h2>
+          <p id="valuesCopy"></p>
+        </div>
+        <div class="values-grid" id="valuesGrid"></div>
       </section>
 
       <section class="container services js-reveal">
         <h2 id="servicesHeading"></h2>
         <div class="services-grid" id="servicesCards"></div>
+      </section>
+
+      <section class="container capabilities js-reveal">
+        <div class="section-header">
+          <p class="eyebrow" id="capabilitiesEyebrow"></p>
+          <h2 id="capabilitiesHeading"></h2>
+          <p id="capabilitiesCopy"></p>
+        </div>
+        <div class="grid-3" id="capabilitiesGrid"></div>
       </section>
 
       <section class="container add-ons js-reveal">
@@ -101,6 +135,46 @@
           <p id="addOnsCopy"></p>
         </div>
         <div class="grid-3" id="addOnsCards"></div>
+      </section>
+
+      <section class="container markets js-reveal" aria-labelledby="marketsHeading">
+        <div class="section-header">
+          <p class="eyebrow" id="marketsEyebrow"></p>
+          <h2 id="marketsHeading"></h2>
+          <p id="marketsCopy"></p>
+        </div>
+        <div class="grid-3" id="marketsGrid"></div>
+      </section>
+
+      <section class="container strengths js-reveal" aria-labelledby="strengthsHeading">
+        <div class="section-header">
+          <p class="eyebrow" id="strengthsEyebrow"></p>
+          <h2 id="strengthsHeading"></h2>
+          <p id="strengthsCopy"></p>
+        </div>
+        <div class="grid-2" id="strengthsGrid"></div>
+      </section>
+
+      <section class="container identity js-reveal" aria-label="Brand identity">
+        <div class="grid-2" id="identityGrid"></div>
+      </section>
+
+      <section class="container tech js-reveal" aria-labelledby="techHeading">
+        <div class="section-header">
+          <p class="eyebrow" id="techEyebrow"></p>
+          <h2 id="techHeading"></h2>
+          <p id="techCopy"></p>
+        </div>
+        <div class="grid-3" id="techGrid"></div>
+      </section>
+
+      <section class="container goals js-reveal" aria-labelledby="goalsHeading">
+        <div class="section-header">
+          <p class="eyebrow" id="goalsEyebrow"></p>
+          <h2 id="goalsHeading"></h2>
+          <p id="goalsCopy"></p>
+        </div>
+        <div class="timeline" id="goalsTimeline"></div>
       </section>
 
       <section class="container portfolio js-reveal">

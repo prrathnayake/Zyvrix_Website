@@ -1,10 +1,10 @@
 export const contact = {
-  heading: "Let's build your next secure product",
-  basicHeading: "Let's talk about your goals",
+  heading: "Design your next automation initiative",
+  basicHeading: "Tell us what to automate",
   copy:
-    "Tell us where your roadmap sits—new launch, MVP, or platform refresh. Pasan replies personally with next steps within one business day.",
+    "Share the workflows, decisions, and data hand-offs you want to streamline. We'll map the right mix of n8n flows, AI agents, and APIs within one business day.",
   basicCopy:
-    "Share a short note about your project and we'll get in touch to plan the right next step.",
+    "Send a quick overview and we'll follow up with discovery slots plus any prep work for your team.",
   emailLabel: "info@zyvrix.com",
   phoneLabel: "+61 434 438 494",
   locationLabel: "Melbourne, Australia",

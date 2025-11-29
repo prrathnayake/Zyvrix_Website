@@ -3,5 +3,5 @@ import { seoContent } from "../site/seo.js";
 export const paymentPage = {
   meta: seoContent.payment,
   message:
-    "All transactions are encrypted and reviewed by our finance team within one business day.",
+    "All automation engagements are billed securely. Our finance team reviews transactions within one business day.",
 };

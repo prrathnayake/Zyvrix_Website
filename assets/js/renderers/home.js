@@ -12,18 +12,29 @@ export function renderHomePage(data) {
   const heroSubtitle = byId("heroSubtitle");
   const heroPrimary = byId("heroPrimary");
   const heroSecondary = byId("heroSecondary");
+  const heroImage = byId("heroImage");
   if (heroEyebrow) heroEyebrow.textContent = hero.eyebrow || "";
   if (heroTitle) heroTitle.textContent = hero.title || "";
   if (heroSubtitle) heroSubtitle.textContent = hero.subtitle || "";
   if (heroPrimary) {
-    const showPrimary = ecommerceEnabled && hero.primaryCta?.label;
-    heroPrimary.textContent = showPrimary ? hero.primaryCta.label : "";
-    heroPrimary.href = showPrimary ? hero.primaryCta.href : "#";
-    heroPrimary.toggleAttribute("hidden", !showPrimary);
+    const label = hero.primaryCta?.label;
+    heroPrimary.textContent = label || "";
+    heroPrimary.href = hero.primaryCta?.href || "#";
+    heroPrimary.toggleAttribute("hidden", !label);
   }
   if (heroSecondary) {
     heroSecondary.textContent = hero.secondaryCta?.label || "";
     heroSecondary.href = hero.secondaryCta?.href || "#";
+    heroSecondary.toggleAttribute("hidden", !hero.secondaryCta?.label);
+  }
+  if (heroImage) {
+    if (hero.image) {
+      heroImage.src = hero.image;
+      heroImage.alt = hero.imageAlt || "Automation collage";
+      heroImage.removeAttribute("hidden");
+    } else {
+      heroImage.setAttribute("hidden", "hidden");
+    }
   }
   const heroMetrics = byId("heroMetrics");
   if (heroMetrics) {
@@ -44,31 +55,118 @@ export function renderHomePage(data) {
     servicesHeading.textContent = page.services?.heading || "";
   const servicesCards = byId("servicesCards");
   if (servicesCards) {
-    const servicesSection = servicesCards.closest(".services");
-    if (servicesSection)
-      servicesSection.toggleAttribute("hidden", !ecommerceEnabled);
     servicesCards.innerHTML = "";
-    if (ecommerceEnabled) {
-      (page.services?.cards || []).forEach((card) => {
-        const article = document.createElement("article");
-        article.className = "service-card js-reveal";
-        const icon = card.icon
-          ? `<span class="service-card__icon">${card.icon}</span>`
-          : "";
-        const highlights = (card.highlights || [])
-          .map((item) => `<li>${item}</li>`)
-          .join("");
-        article.innerHTML = `
-          ${icon}
-          <div class="service-card__body">
-            <h3>${card.title}</h3>
-            <p>${card.description}</p>
-            ${highlights ? `<ul>${highlights}</ul>` : ""}
-          </div>
-        `;
-        servicesCards.appendChild(article);
-      });
+    (page.services?.cards || []).forEach((card) => {
+      const article = document.createElement("article");
+      article.className = "service-card js-reveal";
+      const icon = card.icon
+        ? `<span class="service-card__icon">${card.icon}</span>`
+        : "";
+      const highlights = (card.highlights || [])
+        .map((item) => `<li>${item}</li>`)
+        .join("");
+      article.innerHTML = `
+        ${icon}
+        <div class="service-card__body">
+          <h3>${card.title}</h3>
+          <p>${card.description}</p>
+          ${highlights ? `<ul>${highlights}</ul>` : ""}
+        </div>
+      `;
+      servicesCards.appendChild(article);
+    });
+  }
+
+  const logosEyebrow = byId("logosEyebrow");
+  if (logosEyebrow) logosEyebrow.textContent = page.logos?.eyebrow || "";
+  const logosList = byId("logosList");
+  if (logosList) {
+    logosList.innerHTML = "";
+    (page.logos?.items || []).forEach((logo) => {
+      const span = document.createElement("span");
+      span.className = "js-reveal";
+      span.textContent = logo;
+      logosList.appendChild(span);
+    });
+  }
+
+  const overviewCard = byId("overviewCard");
+  if (overviewCard) {
+    const overview = page.overview || {};
+    const bullets = (overview.points || [])
+      .map((point) => `<li>${point}</li>`)
+      .join("");
+    overviewCard.innerHTML = `
+      <p class="eyebrow">${overview.eyebrow || ""}</p>
+      <h2 id="overviewHeading">${overview.heading || ""}</h2>
+      <p>${overview.copy || ""}</p>
+      ${bullets ? `<ul>${bullets}</ul>` : ""}
+    `;
+  }
+
+  const visionCard = byId("visionCard");
+  const missionCard = byId("missionCard");
+  if (visionCard || missionCard) {
+    const missionVision = page.missionVision || {};
+    if (visionCard) {
+      visionCard.innerHTML = `
+        <p class="eyebrow">${missionVision.visionEyebrow || "Vision"}</p>
+        <h3>${missionVision.visionHeading || "Vision"}</h3>
+        <p>${missionVision.visionCopy || ""}</p>
+      `;
     }
+    if (missionCard) {
+      missionCard.innerHTML = `
+        <p class="eyebrow">${missionVision.missionEyebrow || "Mission"}</p>
+        <h3>${missionVision.missionHeading || "Mission"}</h3>
+        <p>${missionVision.missionCopy || ""}</p>
+      `;
+    }
+  }
+
+  const valuesEyebrow = byId("valuesEyebrow");
+  if (valuesEyebrow) valuesEyebrow.textContent = page.values?.eyebrow || "";
+  const valuesHeading = byId("valuesHeading");
+  if (valuesHeading) valuesHeading.textContent = page.values?.heading || "";
+  const valuesCopy = byId("valuesCopy");
+  if (valuesCopy) valuesCopy.textContent = page.values?.copy || "";
+  const valuesGrid = byId("valuesGrid");
+  if (valuesGrid) {
+    valuesGrid.innerHTML = "";
+    (page.values?.items || []).forEach((value) => {
+      const card = document.createElement("article");
+      card.className = "value-card js-reveal";
+      card.innerHTML = `
+        <h3>${value.title || ""}</h3>
+        <p>${value.copy || ""}</p>
+      `;
+      valuesGrid.appendChild(card);
+    });
+  }
+
+  const capabilities = page.capabilities || {};
+  const capabilitiesEyebrow = byId("capabilitiesEyebrow");
+  if (capabilitiesEyebrow) capabilitiesEyebrow.textContent = capabilities.eyebrow || "";
+  const capabilitiesHeading = byId("capabilitiesHeading");
+  if (capabilitiesHeading) capabilitiesHeading.textContent = capabilities.heading || "";
+  const capabilitiesCopy = byId("capabilitiesCopy");
+  if (capabilitiesCopy) capabilitiesCopy.textContent = capabilities.copy || "";
+  const capabilitiesGrid = byId("capabilitiesGrid");
+  if (capabilitiesGrid) {
+    capabilitiesGrid.innerHTML = "";
+    (capabilities.groups || []).forEach((group) => {
+      const article = document.createElement("article");
+      article.className = "capability-card js-reveal";
+      const list = (group.items || [])
+        .map((item) => `<li>${item}</li>`)
+        .join("");
+      article.innerHTML = `
+        <h3>${group.title || ""}</h3>
+        <p>${group.copy || ""}</p>
+        ${list ? `<ul>${list}</ul>` : ""}
+      `;
+      capabilitiesGrid.appendChild(article);
+    });
   }
 
   const addOns = page.addOns || {};
@@ -80,32 +178,142 @@ export function renderHomePage(data) {
   if (addOnsCopy) addOnsCopy.textContent = addOns.copy || "";
   const addOnsCards = byId("addOnsCards");
   if (addOnsCards) {
-    const addOnsSection = addOnsCards.closest(".add-ons");
-    if (addOnsSection)
-      addOnsSection.toggleAttribute("hidden", !ecommerceEnabled);
     addOnsCards.innerHTML = "";
-    if (ecommerceEnabled) {
-      (addOns.cards || []).forEach((card) => {
-        const article = document.createElement("article");
-        article.className = "add-on-card js-reveal";
-        const highlights = (card.highlights || [])
-          .map((item) => `<li>${item}</li>`)
-          .join("");
-        const image = card.image
-          ? `<figure class="add-on-figure"><img src="${card.image}" alt="${card.title}" /></figure>`
-          : "";
-        article.innerHTML = `
-          ${image}
-          <div class="add-on-body">
-            <h3>${card.title}</h3>
-            <p class="price">${card.price || ""}</p>
-            <p>${card.description || ""}</p>
-            <ul>${highlights}</ul>
-          </div>
-        `;
-        addOnsCards.appendChild(article);
-      });
-    }
+    (addOns.cards || []).forEach((card) => {
+      const article = document.createElement("article");
+      article.className = "add-on-card js-reveal";
+      const highlights = (card.highlights || [])
+        .map((item) => `<li>${item}</li>`)
+        .join("");
+      const image = card.image
+        ? `<figure class="add-on-figure"><img src="${card.image}" alt="${card.title}" /></figure>`
+        : "";
+      article.innerHTML = `
+        ${image}
+        <div class="add-on-body">
+          <h3>${card.title}</h3>
+          <p class="price">${card.price || ""}</p>
+          <p>${card.description || ""}</p>
+          <ul>${highlights}</ul>
+        </div>
+      `;
+      addOnsCards.appendChild(article);
+    });
+  }
+
+  const marketsEyebrow = byId("marketsEyebrow");
+  if (marketsEyebrow) marketsEyebrow.textContent = page.markets?.eyebrow || "";
+  const marketsHeading = byId("marketsHeading");
+  if (marketsHeading) marketsHeading.textContent = page.markets?.heading || "";
+  const marketsCopy = byId("marketsCopy");
+  if (marketsCopy) marketsCopy.textContent = page.markets?.copy || "";
+  const marketsGrid = byId("marketsGrid");
+  if (marketsGrid) {
+    marketsGrid.innerHTML = "";
+    (page.markets?.items || []).forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "market-card js-reveal";
+      const bullets = (item.points || [])
+        .map((point) => `<li>${point}</li>`)
+        .join("");
+      card.innerHTML = `
+        <h3>${item.title || ""}</h3>
+        <p>${item.copy || ""}</p>
+        ${bullets ? `<ul>${bullets}</ul>` : ""}
+      `;
+      marketsGrid.appendChild(card);
+    });
+  }
+
+  const strengthsEyebrow = byId("strengthsEyebrow");
+  if (strengthsEyebrow) strengthsEyebrow.textContent = page.strengths?.eyebrow || "";
+  const strengthsHeading = byId("strengthsHeading");
+  if (strengthsHeading) strengthsHeading.textContent = page.strengths?.heading || "";
+  const strengthsCopy = byId("strengthsCopy");
+  if (strengthsCopy) strengthsCopy.textContent = page.strengths?.copy || "";
+  const strengthsGrid = byId("strengthsGrid");
+  if (strengthsGrid) {
+    strengthsGrid.innerHTML = "";
+    (page.strengths?.items || []).forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "strength-card js-reveal";
+      const bullets = (item.points || [])
+        .map((point) => `<li>${point}</li>`)
+        .join("");
+      card.innerHTML = `
+        <h3>${item.title || ""}</h3>
+        <p>${item.copy || ""}</p>
+        ${bullets ? `<ul>${bullets}</ul>` : ""}
+      `;
+      strengthsGrid.appendChild(card);
+    });
+  }
+
+  const identityGrid = byId("identityGrid");
+  if (identityGrid) {
+    identityGrid.innerHTML = "";
+    (page.identity?.cards || []).forEach((cardData) => {
+      const card = document.createElement("article");
+      card.className = "identity-card js-reveal";
+      const tags = (cardData.tags || [])
+        .map((tag) => `<span class="tag">${tag}</span>`)
+        .join("");
+      const list = (cardData.points || [])
+        .map((point) => `<li>${point}</li>`)
+        .join("");
+      card.innerHTML = `
+        <p class="eyebrow">${cardData.eyebrow || ""}</p>
+        <h3>${cardData.title || ""}</h3>
+        <p>${cardData.copy || ""}</p>
+        ${tags ? `<div class="tags">${tags}</div>` : ""}
+        ${list ? `<ul>${list}</ul>` : ""}
+      `;
+      identityGrid.appendChild(card);
+    });
+  }
+
+  const techEyebrow = byId("techEyebrow");
+  if (techEyebrow) techEyebrow.textContent = page.tech?.eyebrow || "";
+  const techHeading = byId("techHeading");
+  if (techHeading) techHeading.textContent = page.tech?.heading || "";
+  const techCopy = byId("techCopy");
+  if (techCopy) techCopy.textContent = page.tech?.copy || "";
+  const techGrid = byId("techGrid");
+  if (techGrid) {
+    techGrid.innerHTML = "";
+    (page.tech?.categories || []).forEach((category) => {
+      const card = document.createElement("article");
+      card.className = "tech-card js-reveal";
+      const tags = (category.items || [])
+        .map((stack) => `<span class="tag">${stack}</span>`)
+        .join("");
+      card.innerHTML = `
+        <h3>${category.title || ""}</h3>
+        <p>${category.copy || ""}</p>
+        ${category.items ? `<div class="tags">${tags}</div>` : ""}
+      `;
+      techGrid.appendChild(card);
+    });
+  }
+
+  const goalsEyebrow = byId("goalsEyebrow");
+  if (goalsEyebrow) goalsEyebrow.textContent = page.goals?.eyebrow || "";
+  const goalsHeading = byId("goalsHeading");
+  if (goalsHeading) goalsHeading.textContent = page.goals?.heading || "";
+  const goalsCopy = byId("goalsCopy");
+  if (goalsCopy) goalsCopy.textContent = page.goals?.copy || "";
+  const goalsTimeline = byId("goalsTimeline");
+  if (goalsTimeline) {
+    goalsTimeline.innerHTML = "";
+    (page.goals?.items || []).forEach((goal) => {
+      const div = document.createElement("div");
+      div.className = "timeline-item js-reveal";
+      div.innerHTML = `
+        <h4>${goal.title || goal.year || ""}</h4>
+        <p>${goal.detail || ""}</p>
+      `;
+      goalsTimeline.appendChild(div);
+    });
   }
 
   const highlightsHeading = byId("highlightsHeading");

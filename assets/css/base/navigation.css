@@ -1,15 +1,16 @@
 .site-header {
   position: sticky;
   top: 0;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  z-index: 10;
-  transition: box-shadow 0.3s ease, background 0.3s ease;
+  background: color-mix(in srgb, var(--glass) 85%, rgba(255, 255, 255, 0.4));
+  border-bottom: 1px solid transparent;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 20px 40px rgba(8, 15, 31, 0.06);
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  box-shadow: 0 20px 60px rgba(9, 18, 40, 0.16);
 }
 
 .nav-wrap {
@@ -217,20 +218,28 @@ body.nav-open .nav-toggle__bar:nth-child(3) {
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
   color: var(--text);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.brand svg {
+  color: var(--brand);
+  filter: drop-shadow(0 8px 15px rgba(0, 215, 255, 0.25));
 }
 
 .primary-nav a {
-  margin: 0 8px;
+  margin: 0 12px;
   text-decoration: none;
-  color: var(--text);
+  color: var(--muted);
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .primary-nav a:hover {
-  color: var(--brand);
+  color: var(--text);
 }
 
 @media (max-width: 768px) {

@@ -1,57 +1,57 @@
 export const quoteCalculator = {
   projects: {
-    web: {
-      label: "Web & marketing site",
+    automation: {
+      label: "Workflow automation",
       tiers: {
-        small: { title: "Launch site", base: 1800, currency: "AUD" },
-        medium: { title: "Growth site", base: 3600, currency: "AUD" },
-        large: { title: "Scale site", base: 5800, currency: "AUD" },
+        small: { title: "Launch workflows", base: 5200, currency: "USD" },
+        medium: { title: "Growth program", base: 9200, currency: "USD" },
+        large: { title: "Enterprise orchestration", base: 14800, currency: "USD" },
       },
     },
-    mobile: {
-      label: "Mobile app",
+    agents: {
+      label: "AI agents",
       tiers: {
-        small: { title: "MVP app", base: 4200, currency: "AUD" },
-        medium: { title: "Growth app", base: 7200, currency: "AUD" },
-        large: { title: "Enterprise app", base: 11200, currency: "AUD" },
+        small: { title: "Pilot agent", base: 5600, currency: "USD" },
+        medium: { title: "Agent pod", base: 10400, currency: "USD" },
+        large: { title: "Agent mesh", base: 17600, currency: "USD" },
       },
     },
-    api: {
-      label: "API / platform",
+    integrations: {
+      label: "Integrations & data mesh",
       tiers: {
-        small: { title: "Core API", base: 3600, currency: "AUD" },
-        medium: { title: "Platform expansion", base: 6900, currency: "AUD" },
-        large: { title: "Enterprise platform", base: 11800, currency: "AUD" },
+        small: { title: "Core sync", base: 6400, currency: "USD" },
+        medium: { title: "Unified fabric", base: 11800, currency: "USD" },
+        large: { title: "Global data mesh", base: 19200, currency: "USD" },
       },
     },
-    ecom: {
-      label: "Commerce experience",
+    platforms: {
+      label: "Custom platform",
       tiers: {
-        small: { title: "Launch store", base: 3200, currency: "AUD" },
-        medium: { title: "Growth store", base: 5400, currency: "AUD" },
-        large: { title: "Scale commerce", base: 8900, currency: "AUD" },
+        small: { title: "Ops portal", base: 7800, currency: "USD" },
+        medium: { title: "Control room", base: 14800, currency: "USD" },
+        large: { title: "Enterprise platform", base: 23800, currency: "USD" },
       },
     },
   },
   timelines: {
     standard: { label: "6–10 weeks", adjustment: 0 },
-    accelerated: { label: "3–5 weeks", adjustment: 1200 },
-    rush: { label: "Under 3 weeks", adjustment: 2400 },
+    accelerated: { label: "3–5 weeks", adjustment: 1800 },
+    rush: { label: "Under 3 weeks", adjustment: 3600 },
   },
   compliance: {
     standard: { label: "General best practice", adjustment: 0 },
-    regulated: { label: "Regulated industry support", adjustment: 1500 },
-    critical: { label: "Mission critical / audited", adjustment: 2800 },
+    regulated: { label: "Regulated data or finance", adjustment: 2200 },
+    critical: { label: "Mission critical / audited", adjustment: 4200 },
   },
   support: {
     0: { label: "No ongoing support", multiplier: 0 },
-    "0.12": {
-      label: "Monthly performance & CRO (12% of build)",
-      multiplier: 0.12,
+    "0.1": {
+      label: "Automation care plan (10% of build)",
+      multiplier: 0.1,
     },
-    "0.2": {
-      label: "Embedded optimisation squad (20% of build)",
-      multiplier: 0.2,
+    "0.18": {
+      label: "Embedded optimisation squad (18% of build)",
+      multiplier: 0.18,
     },
   },
 };

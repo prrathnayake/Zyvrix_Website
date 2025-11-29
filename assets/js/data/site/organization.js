@@ -1,11 +1,11 @@
 export const organization = {
   name: "Zyvrix",
   legalName: "Zyvrix Pty Ltd",
-  tagline: "Building bold products with security at the core.",
+  tagline: "Automation-native software and intelligent agents.",
   description:
-    "Zyvrix is a lean duo of builders—lead developer Pasan Rathnayake and cybersecurity specialist Sunera Ranasooriya—crafting web and mobile experiences that stay resilient long after launch.",
+    "Zyvrix is a next-generation automation studio designing, building, and operating n8n workflows, AI-driven agents, deep integrations, and custom platforms that remove repetitive work for modern teams.",
   url: "https://zyvrix.com",
-  logo: "assets/img/favicon.svg",
+  logo: "assets/img/Zyvrix-LOGO.png",
   email: "info@zyvrix.com",
   phone: "+61 434 438 494",
   location: {

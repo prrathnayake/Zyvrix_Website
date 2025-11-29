@@ -3,44 +3,44 @@ import { seoContent } from "../../site/seo.js";
 export const pricingPage = {
   meta: seoContent.pricing,
   intro:
-    "Start with the category that matches your roadmap—web, mobile, platform, or commerce—then choose the engagement level that fits your timeline and complexity.",
+    "Choose the automation stream that fits your roadmap—workflows, AI agents, integrations, or custom platforms—then select the tier that matches your ambition.",
   addOns: {
     eyebrow: "Extend your engagement",
     heading: "Recurring services for continuous gains",
     copy:
-      "Layer proactive maintenance, SEO, and experimentation to keep performance, compliance, and growth trending up after launch.",
+      "Layer proactive monitoring, optimisation, and compliance so automations stay trustworthy long after handover.",
     cards: [
       {
-        title: "Monthly maintenance retainer",
-        price: "From $680/mo",
+        title: "Automation care plan",
+        price: "From $3.5k/qtr",
         description:
-          "Framework upgrades, hosting patching, uptime monitoring, and quarterly recovery drills.",
+          "Reliability checks, runbook refreshes, and incident-ready support for every workflow and agent.",
         highlights: [
-          "Dependency patching with changelog reports",
-          "Infrastructure reviews and cost optimisation",
-          "Incident response runbooks + on-call escalation",
+          "Health scoring across all automations",
+          "Alert routing with on-call escalation",
+          "Sandbox verification for every change",
         ],
       },
       {
-        title: "SEO & content optimisation",
-        price: "From $760/mo",
+        title: "Insights & optimisation",
+        price: "From $2.5k/qtr",
         description:
-          "Roadmaps combining keyword research, structured data, and UX copy updates for compounding organic growth.",
+          "Dashboards, experimentation, and backlog grooming focused on hours saved, accuracy, and adoption.",
         highlights: [
-          "Quarterly technical SEO audits",
-          "Editorial calendar + CMS workflow support",
-          "Backlink and schema development",
+          "ROI and utilisation dashboards",
+          "Quarterly optimisation roadmap",
+          "Leadership-ready reporting packs",
         ],
       },
       {
-        title: "Experimentation squad",
-        price: "From $990/mo",
+        title: "Compliance & governance",
+        price: "From $180/hr",
         description:
-          "Hypothesis-driven experiments across landing pages, checkout, and product funnels with analytics instrumentation.",
+          "Reviews covering credential access, AI guardrails, and regulated data handling.",
         highlights: [
-          "Test design and implementation",
-          "Weekly readouts with action plans",
-          "Attribution and lifecycle reporting dashboards",
+          "Zero Trust policy updates",
+          "Incident tabletop exercises",
+          "Procurement-friendly evidence bundles",
         ],
       },
     ],
@@ -49,19 +49,19 @@ export const pricingPage = {
     eyebrow: "Smart support pairings",
     heading: "Recommended services by focus area",
     copy:
-      "Toggle between product types to explore the specialist services that keep each engagement secure, optimised, and compliant after launch.",
+      "Toggle between automation types to explore the specialist services that keep each engagement reliable and measurable.",
     empty: "Service recommendations are being finalised. Check back shortly.",
     linkLabel: "Explore service details",
   },
   customEngagement: {
     eyebrow: "Bespoke programs",
-    heading: "Design a custom engagement around your roadmap",
+    heading: "Design a custom automation program",
     copy:
-      "Mix and match retainers, discovery sprints, and compliance support. We assemble the right specialists to move your KPI targets while protecting customer data.",
+      "Mix retainers, discovery sprints, and governance packages. We assemble the right specialists to eliminate manual work while protecting every integration.",
     highlights: [
-      "Dedicated engagement lead and security champion",
-      "Fortnightly ROI reporting with agreed KPIs",
-      "Shared delivery board with budget and runway visibility",
+      "Dedicated engagement lead and security steward",
+      "Fortnightly ROI reporting with KPI commitments",
+      "Shared delivery board with budget and adoption stats",
     ],
     primaryCta: { label: "Schedule a planning session", href: "contact.html" },
     secondaryCta: {
@@ -69,52 +69,52 @@ export const pricingPage = {
       href: "about.html#aboutApproach",
     },
     invoice: {
-      label: "Pro-forma invoice",
-      reference: "INV-2045-CUSTOM",
-      issued: "14 May 2024",
+      label: "Sample program",
+      reference: "INV-2407-AUTO",
+      issued: "02 Oct 2025",
       due: "Valid for 30 days",
-      turnaround: "12-week roadmap & optimisation runway",
+      turnaround: "12-week automation runway",
       paymentTerms: "50% deposit, balance on delivery",
       billTo: {
         company: "Your organisation",
-        contact: "Procurement lead",
+        contact: "Automation sponsor",
       },
       currency: "USD",
       lineItems: [
         {
-          description: "Discovery & risk alignment sprint",
+          description: "Workflow & agent discovery sprint",
           quantity: 1,
           unit: "sprint",
-          rate: 4800,
-          total: 4800,
+          rate: 5800,
+          total: 5800,
         },
         {
-          description: "Secure delivery squad (fortnightly cadence)",
+          description: "Automation squad (8 weeks)",
           quantity: 2,
-          unit: "months",
-          rate: 3600,
-          total: 7200,
+          unit: "month",
+          rate: 7200,
+          total: 14400,
         },
         {
-          description: "Compliance automation & reporting setup",
+          description: "Compliance & telemetry setup",
           quantity: 1,
           unit: "package",
-          rate: 2800,
-          total: 2800,
+          rate: 3200,
+          total: 3200,
         },
       ],
-      subtotal: 14800,
-      tax: 740,
-      total: 15540,
+      subtotal: 23400,
+      tax: 0,
+      total: 23400,
       note: "Figures reflect a blended senior squad. We'll refine the breakdown with your stakeholders before signature.",
       downloadLabel: "Download invoice PDF",
     },
     aside: {
       title: "What to expect",
       metrics: [
-        { label: "Average payback", value: "4.2 months" },
-        { label: "Security incidents", value: "0 critical in 36 months" },
-        { label: "Client NPS", value: "+72" },
+        { label: "Average payback", value: "<5 months" },
+        { label: "Manual work removed", value: "60–80%" },
+        { label: "Client NPS", value: "+76" },
       ],
     },
   },
@@ -122,206 +122,190 @@ export const pricingPage = {
     eyebrow: "Need help without a package?",
     heading: "Book standalone services",
     copy:
-      "Pick the sprints and reviews that solve your immediate challenges—from security audits to SEO growth plays.",
-    note: "Every service includes a discovery call, scoped roadmap, and documented next steps.",
+      "Grab focused sprints—workflow diagnostics, AI agent audits, or integration reviews—and plug them into your roadmap.",
+    note: "Every service includes discovery, a scoped roadmap, and documented next steps.",
   },
   compare: {
-    heading: "Compare project tiers",
+    heading: "Compare automation tiers",
     copy:
-      "Understand how deliverables evolve within each category so you can pick the right balance of investment and velocity.",
+      "See how scope, governance, and measurement evolve across automation types so you can pick the right investment level.",
     categories: [
       {
-        id: "web",
-        label: "Web & marketing websites",
+        id: "automation",
+        label: "Workflow automation",
         summary:
-          "Move from launch-ready pages to global storytelling engines with experimentation built in.",
+          "From tactical wins to enterprise orchestration across departments.",
         columns: [
-          { planId: "web-launch", label: "Starter package" },
-          { planId: "web-growth", label: "Growth package" },
-          { planId: "web-scale", label: "Scale package" },
+          { planId: "automation-launch", label: "Launch" },
+          { planId: "automation-growth", label: "Growth" },
+          { planId: "automation-scale", label: "Scale" },
         ],
         rows: [
           {
             label: "Ideal for",
             values: [
-              "Idea-stage founders shipping credibility",
-              "Scaling teams running content and CRO",
-              "Global organisations with governance needs",
+              "Teams automating a single process",
+              "Ops leaders scaling automation programs",
+              "Enterprises replacing ops centres",
             ],
           },
           {
-            label: "Content ops",
+            label: "Scope",
             values: [
-              "Component-driven pages + messaging workshop",
-              "CMS-driven content with automation hooks",
-              "Multi-region publishing with localisation workflows",
+              "Up to 6 workflows + custom nodes",
+              "10–15 workflows with approvals",
+              "Unlimited workflows with multi-region infra",
             ],
           },
           {
-            label: "Experience",
+            label: "Governance",
             values: [
-              "Responsive layouts + SEO baseline",
-              "Motion design & experimentation roadmap",
-              "A/B testing suite with analytics dashboards",
-            ],
-          },
-          {
-            label: "Security & compliance",
-            values: [
-              "Best-practice hardening",
-              "Security headers + WAF automation",
-              "Regional privacy workflows & threat modelling",
+              "Credential vault + audit basics",
+              "Role-based controls + SLA tracking",
+              "Full compliance packs + SOC-ready logging",
             ],
           },
           {
             label: "Measurement",
             values: [
-              "Analytics baseline",
-              "Conversion dashboards",
-              "Executive reporting with experimentation insights",
+              "Time-saved dashboard",
+              "ROI + adoption analytics",
+              "Executive telemetry + cost attribution",
             ],
           },
         ],
       },
       {
-        id: "mobile",
-        label: "Mobile products",
+        id: "agents",
+        label: "AI agents",
         summary:
-          "From MVPs in the app stores to enterprise-ready cross-platform experiences.",
+          "Spin up trusted AI teammates with the right level of control and oversight.",
         columns: [
-          { planId: "mobile-launch", label: "Starter package" },
-          { planId: "mobile-growth", label: "Growth package" },
-          { planId: "mobile-scale", label: "Scale package" },
+          { planId: "agents-launch", label: "Launch" },
+          { planId: "agents-growth", label: "Growth" },
+          { planId: "agents-scale", label: "Scale" },
         ],
         rows: [
           {
             label: "Ideal for",
             values: [
-              "Founders validating a mobile MVP",
-              "Product teams growing retention",
-              "Enterprises demanding resilience & compliance",
+              "Piloting one AI assistant",
+              "Rolling out multi-agent pods",
+              "Regulated teams needing enterprise guardrails",
             ],
           },
           {
-            label: "Platform coverage",
+            label: "Capabilities",
             values: [
-              "iOS & Android with shared code",
-              "Native patterns + advanced device features",
-              "Background tasks, realtime sync, localisation",
+              "Document reading + SOP execution",
+              "Agent swarms with shared context",
+              "Mesh of agents + toolchains across business units",
             ],
           },
           {
-            label: "Engagement",
+            label: "Controls",
             values: [
-              "Analytics + crash monitoring",
-              "CI/CD automation with release pipeline",
-              "24/7 observability with incident runbooks",
+              "Prompt logging + manual approvals",
+              "Policy engine + bias monitoring",
+              "In-flight guardrails + compliance evidence",
+            ],
+          },
+          {
+            label: "Analytics",
+            values: [
+              "Accuracy + escalation tracking",
+              "Cost + performance dashboards",
+              "Enterprise telemetry with FinOps insights",
             ],
           },
         ],
       },
       {
-        id: "ecom",
-        label: "Commerce & subscriptions",
+        id: "integrations",
+        label: "Integrations & data mesh",
         summary:
-          "Scale from secure carts to multi-market commerce engines.",
+          "Connect CRMs, ERPs, warehouses, and SaaS apps with the right level of governance.",
         columns: [
-          { planId: "ecom-launch", label: "Starter package" },
-          { planId: "ecom-growth", label: "Growth package" },
-          { planId: "ecom-scale", label: "Scale package" },
+          { planId: "integrations-launch", label: "Launch" },
+          { planId: "integrations-growth", label: "Growth" },
+          { planId: "integrations-scale", label: "Scale" },
         ],
         rows: [
           {
-            label: "Merchandising",
+            label: "Ideal for",
             values: [
-              "Tailored theme + 120 SKUs",
-              "Headless catalogue with bundles & subscriptions",
-              "Composable commerce with marketplaces + wholesale",
+              "Syncing two business-critical systems",
+              "Centralising data pipelines",
+              "Global data mesh + partner APIs",
             ],
           },
           {
-            label: "Customer experience",
+            label: "Data ops",
             values: [
-              "Optimised storefront templates",
-              "Personalised journeys & segmentation",
-              "Custom checkout + experimentation program",
+              "Schema mapping + validation",
+              "Event-driven flows + CDC",
+              "Lineage, catalog, and governance",
+            ],
+          },
+          {
+            label: "Reliability",
+            values: [
+              "Retries + alerting",
+              "Runbook automation + cost tuning",
+              "Multi-region failover + rollback drills",
+            ],
+          },
+          {
+            label: "Enablement",
+            values: [
+              "Ops handbook",
+              "Shared dashboards + training",
+              "Self-serve connector marketplace",
+            ],
+          },
+        ],
+      },
+      {
+        id: "platforms",
+        label: "Custom platforms",
+        summary:
+          "Give teams automation-ready portals, APIs, and control rooms tailored to your business.",
+        columns: [
+          { planId: "platforms-launch", label: "Launch" },
+          { planId: "platforms-growth", label: "Growth" },
+          { planId: "platforms-scale", label: "Scale" },
+        ],
+        rows: [
+          {
+            label: "Ideal for",
+            values: [
+              "Internal tooling tied to automations",
+              "Ops hubs and analytics portals",
+              "Enterprise control rooms spanning teams",
+            ],
+          },
+          {
+            label: "Architecture",
+            values: [
+              "API-first monolith with secure auth",
+              "Modular services + automation console",
+              "Multi-tenant platform with event streams",
+            ],
+          },
+          {
+            label: "Automation depth",
+            values: [
+              "Surface workflow triggers + statuses",
+              "Approval + override experiences",
+              "Automation marketplace + AI agent panels",
             ],
           },
           {
             label: "Operations",
             values: [
-              "Payments, tax, shipping automation",
-              "ERP/IMS integration + forecasting",
-              "Global fulfilment orchestration & service mesh",
-            ],
-          },
-          {
-            label: "Security",
-            values: [
-              "Secure gateway configuration",
-              "Fraud prevention & monitoring",
-              "Pen-testing, SOC2 alignment, and observability",
-            ],
-          },
-          {
-            label: "Growth",
-            values: [
-              "Analytics baseline",
-              "Attribution + lifecycle automation",
-              "Customer data platforms with BI dashboards",
-            ],
-          },
-        ],
-      },
-      {
-        id: "api",
-        label: "API & backend platforms",
-        summary:
-          "Evolve from foundational APIs to compliant, data-rich platforms.",
-        columns: [
-          { planId: "api-launch", label: "Starter package" },
-          { planId: "api-growth", label: "Growth package" },
-          { planId: "api-scale", label: "Scale package" },
-        ],
-        rows: [
-          {
-            label: "Architecture",
-            values: [
-              "Secure monolith with modular patterns",
-              "Service-ready architecture with event flows",
-              "Microservices with service mesh & governance",
-            ],
-          },
-          {
-            label: "Integrations",
-            values: [
-              "Core system APIs",
-              "Webhooks + automation",
-              "Enterprise integrations & data lakehouse",
-            ],
-          },
-          {
-            label: "Security posture",
-            values: [
-              "RBAC & audit logging",
-              "SSO + secrets automation",
-              "Compliance support with quarterly testing",
-            ],
-          },
-          {
-            label: "Scalability",
-            values: [
-              "CI/CD with automated tests",
-              "Autoscaling + observability suite",
-              "Multi-region deployments with chaos testing",
-            ],
-          },
-          {
-            label: "Product analytics",
-            values: [
-              "Feature usage tracking",
-              "Cohort analysis + funnels",
-              "Custom BI dashboards & stakeholder reporting",
+              "Release training + documentation",
+              "CI/CD + reliability reviews",
+              "Dedicated enablement + success team",
             ],
           },
         ],

@@ -3,7 +3,7 @@ import { contact } from "./contact.js";
 
 export const footer = {
   about:
-    "Melbourne-based engineers delivering security-first web, mobile, and platform builds with startup-friendly collaboration.",
+    "Automation engineers delivering n8n workflows, AI agents, and custom software that scale operations for ambitious teams.",
   legalNote: "ABN 00 123 456 789",
   contactPoints: [
     {
@@ -32,17 +32,17 @@ export const footer = {
   securityPractices: [
     {
       title: "Encryption",
-      detail: "AES-256 encryption protects credentials and project artefacts end-to-end.",
+      detail: "AES-256 encryption protects automation credentials, secrets, and execution history end-to-end.",
       icon: "<svg viewBox='0 0 24 24' aria-hidden='true'><path fill='currentColor' d='M17 10h-1V7a4 4 0 00-8 0v3H7a1 1 0 00-1 1v8a1 1 0 001 1h10a1 1 0 001-1v-8a1 1 0 00-1-1zm-7-3a2 2 0 114 0v3h-4zm4 8a2 2 0 11-4 0 2 2 0 014 0z'/></svg>",
     },
     {
-      title: "Decryption",
-      detail: "Role-based approvals unlock secrets only when audits and delivery require it.",
+      title: "Agent controls",
+      detail: "Role-based approvals and audit trails govern when AI agents or automations can read sensitive data.",
       icon: "<svg viewBox='0 0 24 24' aria-hidden='true'><path fill='currentColor' d='M21 7a5 5 0 10-9.8 1.7L3 17v4h4l1.71-1.71L10 18v-2h2l1-1v-2h2l1.59-1.59A5 5 0 0021 7zm-5 3a3 3 0 113-3 3 3 0 01-3 3z'/></svg>",
     },
     {
       title: "JWT tokenisation",
-      detail: "Signed JWT flows guard customer sessions and integrations with rotation policies.",
+      detail: "Signed JWT flows guard API sessions, webhooks, and integration runtimes with rotation policies.",
       icon: "<svg viewBox='0 0 24 24' aria-hidden='true'><path fill='currentColor' d='M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4zm0 4.6L8 8v3.9a6.1 6.1 0 004 5.5 6.1 6.1 0 004-5.5V8z'/></svg>",
     },
   ],

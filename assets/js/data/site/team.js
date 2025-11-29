@@ -2,18 +2,18 @@ export const team = [
   {
     id: "pasan-rathnayake",
     name: "Pasan Rathnayake",
-    role: "Lead Developer",
+    role: "Lead Automation Architect",
     location: "Melbourne, Australia",
     bio:
-      "Pasan leads product architecture at Zyvrix, applying years of full-stack experience across web, mobile, and API builds while pairing every sprint with security best practices.",
+      "Pasan architects automation ecosystems end-to-end, combining n8n, custom APIs, and modern frontends to help teams launch reliable, scalable digital operations.",
     testimonial:
-      "“I enjoy turning complex ideas into maintainable products that are fast, accessible, and safe to scale.”",
+      "“Automation should feel invisible. My goal is to build systems that quietly move data, trigger decisions, and keep customers delighted.”",
     portfolio: "https://builtbypasan.com/",
     focus: [
-      "End-to-end SaaS and marketing platform builds",
-      "React, Next.js, Flutter, and modern mobile stacks",
-      "Node.js, Laravel, and API-first architecture",
-      "DevOps automation and performance tuning",
+      "End-to-end automation and orchestration programs",
+      "React, Next.js, and automation-ready UI systems",
+      "Node.js, Laravel, and API-first architectures",
+      "DevOps automation, CI/CD, and performance tuning",
     ],
     links: [
       { label: "Portfolio", href: "https://builtbypasan.com/" },
@@ -29,16 +29,16 @@ export const team = [
   {
     id: "sunera-ranasooriya",
     name: "Sunera Ranasooriya",
-    role: "Cybersecurity Specialist & Advisor",
+    role: "Automation Strategist & Security Lead",
     location: "Melbourne, Australia",
     bio:
-      "Sunera co-founded Zyvrix to embed cybersecurity thinking inside every project, advising on threat modelling, penetration testing, and governance for growing teams.",
+      "Sunera ensures every intelligent workflow is trustworthy—designing governance, security, and compliance layers around AI agents and automations.",
     testimonial:
-      "“Security isn't a checkbox—it’s a culture. I love helping teams adopt practices they can own.”",
+      "“Automation wins when safeguards inspire confidence. I help teams pair velocity with clear controls and reporting.”",
     portfolio: "https://zyvrix.com/security",
     focus: [
-      "Threat modelling and purple-team simulations",
-      "Zero Trust network and identity strategy delivery",
+      "Threat modelling for automation and AI decision loops",
+      "Zero Trust integrations and identity design",
       "Security awareness, runbooks, and incident response coaching",
     ],
     links: [

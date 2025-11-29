@@ -3,194 +3,178 @@ import { seoContent } from "../site/seo.js";
 export const aboutPage = {
   meta: seoContent.about,
   intro:
-    "Zyvrix is the pairing of a full-stack developer and a cybersecurity specialist who co-create products that are useful, fast, and protected.",
+    "Zyvrix is a next-generation automation company founded to replace manual busywork with intelligent digital systems—spanning workflow automation, API development, web and app builds, cybersecurity consulting, and SEO optimisation.",
   mission:
-    "We exist to help founders ship web and mobile experiences with confidence—combining craftsmanship with the security insight usually reserved for larger teams.",
-  pillarsHeading: "What makes Zyvrix different",
+    "We design, build, and run n8n workflows, AI agents, APIs, and custom software so organisations can operate at machine speed with human oversight.",
+  pillarsHeading: "What guides every build",
   pillars: [
     {
-      title: "Two founders on every project",
+      title: "Automation-first delivery",
       detail:
-        "Your roadmap is handled by Pasan Rathnayake and Sunera Ranasooriya directly—no hand-offs, just transparent delivery.",
+        "Every engagement begins with mapping the processes holding teams back. We automate the data hand-offs, approvals, and updates end-to-end.",
       highlights: [
-        "Direct Slack and stand-up access",
-        "Shared dashboards for progress and risks",
-        "Decisions documented in plain language",
+        "ROI modelling and workflow architecture",
+        "Custom connectors for unique systems",
+        "Telemetry that shows time and cost saved",
       ],
     },
     {
-      title: "Development plus cybersecurity",
+      title: "Intelligent agents with guardrails",
       detail:
-        "We build the features you need and harden them along the way—threat models, secure coding, and compliance support included.",
+        "AI agents are only valuable when they can be trusted. We pair reasoning models with policies, context retrieval, and human-in-the-loop controls.",
       highlights: [
-        "Penetration testing and remediation guidance",
-        "Secure-by-default architecture decisions",
-        "Clear documentation for auditors and investors",
+        "Decision trees tied to SOPs",
+        "Compliance-ready logging",
+        "Escalation paths for sensitive work",
       ],
     },
     {
-      title: "Startup-friendly collaboration",
+      title: "Deep integration & governance",
       detail:
-        "Small teams need flexible partners. We adjust to your tools, work async across time zones, and keep delivery measurable.",
+        "Our APIs and integrations keep ERPs, CRMs, data warehouses, and back-office tools in sync with enterprise-grade security.",
       highlights: [
-        "Notion, Linear, or Jira—your choice",
-        "Weekly demos with actionable next steps",
-        "Budget visibility with burn forecasts",
+        "Zero Trust identity and access design",
+        "Schema governance and contract tests",
+        "Audit packs for procurement teams",
       ],
     },
   ],
   story: {
     copy:
-      "Zyvrix started when Pasan and Sunera saw founders struggling to balance ambitious roadmaps with security obligations. After years working inside startups and regulated industries, we combined forces to offer the best of both disciplines under one roof.",
+      "Pasan and Sunera spent years inside scaling startups and regulated enterprises. They saw teams drowning in urgent manual work while digital transformation projects dragged on. Zyvrix launched to provide a pragmatic, automation-first alternative.",
     milestones: [
-      {
-        year: "2019",
-        detail:
-          "Pasan and Sunera collaborated on a fintech launch, blending app development with security assessments.",
-      },
-      {
-        year: "2021",
-        detail:
-          "The duo began taking on joint contracts across healthcare, finance, and telecom teams across APAC.",
-      },
-      {
-        year: "2023",
-        detail:
-          "Formalised Zyvrix with packaged services covering web, mobile, API, and continuous security support.",
-      },
-      {
-        year: "2024",
-        detail:
-          "Introduced long-term retainers for SEO optimisation, monitoring, and executive-ready security reporting.",
-      },
+      { year: "2019", detail: "Automated onboarding flows for an APAC telco, proving the power of orchestration plus security." },
+      { year: "2021", detail: "Built integration hubs for finance and logistics clients needing single sources of truth." },
+      { year: "2023", detail: "Launched AI agent services that combine reasoning models with policy enforcement." },
+      { year: "2024", detail: "Scaled retainers focused on process intelligence, compliance reporting, and autonomous ops." },
     ],
     media: {
-      img: "assets/img/placeholder-team.svg",
-      alt: "Zyvrix team workshop",
-      caption: "Weekly roadmap and security review led by the Zyvrix founders.",
+      img: "assets/img/about-story.png",
+      alt: "Zyvrix workshop",
+      caption: "Weekly automation review pairing workflow architects with security oversight.",
     },
   },
   approach: [
     {
-      title: "Discovery & alignment",
+      title: "Discover",
       detail:
-        "We gather requirements, success metrics, and constraints while mapping early risks so expectations stay realistic.",
+        "Interview stakeholders, capture SOPs, and benchmark manual effort to define success metrics and automation scope.",
     },
     {
-      title: "Design & prototyping",
+      title: "Design",
       detail:
-        "Rapid prototypes validate UX decisions, content strategy, and component accessibility before development.",
+        "Prototype workflows, AI prompts, and integration maps with measurable guardrails before touching production.",
     },
     {
-      title: "Build & secure",
+      title: "Build",
       detail:
-        "Code ships in iterative sprints with automated testing, infrastructure as code, and embedded security reviews.",
+        "Ship automations, APIs, and agents in sprints with automated testing, observability, and knowledge transfer.",
     },
     {
-      title: "Launch & optimise",
+      title: "Operate",
       detail:
-        "Post-launch support covers observability, performance tuning, and growth experiments that align with KPIs.",
+        "Monitor performance, report ROI, and maintain playbooks so your team can extend with confidence.",
     },
   ],
   techStack: [
-    "TypeScript, Next.js, and Astro",
-    "React Native & Flutter",
-    "Node.js, Laravel, and Go microservices",
-    "MySQL, PostgreSQL, PlanetScale, DynamoDB",
-    "AWS, Azure, GCP, Vercel, and Railway",
+    "n8n, Temporal, and custom orchestrators",
+    "OpenAI, Anthropic, and local LLM strategies",
+    "Node.js, Laravel, Go, and GraphQL APIs",
+    "PostgreSQL, MySQL, BigQuery, Snowflake",
+    "AWS, Azure, GCP, Vercel, and Fly.io",
     "Terraform, Docker, and GitHub Actions",
   ],
   impact: [
     {
-      metric: "30+",
-      label: "Projects shipped together",
-      detail: "From early prototypes to production platforms with measurable security improvements.",
+      metric: "1.2M+",
+      label: "Annual tasks automated",
+      detail: "Automations spanning ops, finance, GTM, and product support.",
     },
     {
-      metric: "4.9/5",
-      label: "Average client rating",
-      detail: "Feedback from founders who appreciated proactive communication and thorough documentation.",
+      metric: "35",
+      label: "Connectors delivered",
+      detail: "From enterprise ERPs to bespoke data warehouses.",
     },
     {
-      metric: "<2.5s",
-      label: "Median LCP after launch",
-      detail: "We optimise for Core Web Vitals as part of every production deployment.",
+      metric: "96%",
+      label: "Automations with audit logs",
+      detail: "Security and compliance baked into every workflow.",
     },
     {
-      metric: "24/7",
-      label: "Monitoring & incident cover",
-      detail: "Retainer clients receive automated alerts with escalation runbooks.",
+      metric: "48 hrs",
+      label: "Discovery summary",
+      detail: "Founders return roadmaps and costs within two business days.",
     },
   ],
   values: [
-    "Security by default",
-    "Outcome-driven delivery",
-    "Transparent collaboration",
-    "Continuous improvement",
+    "Automate with intent",
+    "Design for trust",
+    "Show the data",
+    "Ship, learn, iterate",
   ],
   leadership: {
     heading: "Leadership & governance",
     copy:
-      "Working with Zyvrix means direct access to decision-makers. We handle delivery, quality, and security ourselves while looping in specialist partners only when needed.",
+      "You work with Pasan and Sunera end-to-end. They run delivery, track risk, and communicate progress in the tools your teams already use.",
     details: [
-      "You work with Pasan and Sunera from kickoff to post-launch.",
-      "Weekly governance reviews cover scope, risk, and budget health.",
-      "Clients receive lightweight, audit-friendly documentation packs.",
+      "Weekly governance calls covering scope, blockers, and ROI",
+      "Shared dashboards exposing automation health and adoption",
+      "Executive briefs summarising impact for stakeholders",
     ],
   },
   assurance: {
-    heading: "Assurance & ways of working",
+    heading: "Assurance & controls",
     copy:
-      "We treat every build as mission critical. Tooling, secrets, and client data are isolated per engagement with least-privilege access.",
+      "Automation only sticks when it feels safe. Every engagement ships with auditable controls, secure credential handling, and documented escalation paths.",
     commitments: [
       "Dedicated compliance workspace with access logs",
-      "Secure vault for credential exchange and rotation",
-      "Signed NDAs and background checks for all staff",
-      "Structured incident communication within 1 hour",
+      "Secret rotation and vault-backed credential sharing",
+      "Incident communication within 1 hour of detection",
+      "Training for your teams on how to own the stack",
     ],
   },
   certifications: [
-    "AWS Certified Solutions Architect – Professional",
+    "AWS Certified Solutions Architect — Professional",
     "Certified Information Systems Security Professional (CISSP)",
     "Offensive Security Certified Professional (OSCP)",
-    "Google Analytics 4 Certification",
+    "Google Cloud Professional Data Engineer",
   ],
   community: [
-    "Host community sessions for early-stage founders on security basics",
-    "Publish checklists for combining product delivery with compliance",
-    "Mentor at local startup accelerators on secure product launches",
-    "Speak at developer meetups about performance and accessibility",
+    "Host automation clinics for startups and operators",
+    "Publish checklists for connecting AI agents to critical systems",
+    "Mentor at accelerators on process intelligence and n8n",
+    "Speak at meetups about API-first automation patterns",
   ],
   partners: [
+    "n8n Enterprise Partner",
     "Vercel & Netlify deployment partners",
-    "AWS Activate and Microsoft for Startups programs",
-    "Firebase & Supabase startup programs",
-    "Security tooling alliances with Snyk and Prisma Cloud",
+    "AWS Activate and Microsoft for Startups",
+    "Security tool alliances with Snyk and Prisma Cloud",
   ],
   gallery: {
     copy:
-      "Scenes from our remote-first studio where code reviews, security drills, and design jams happen side by side.",
+      "Scenes from our remote-first studio where code reviews, automation diagrams, and AI experiments happen side by side.",
     items: [
       {
-        title: "Threat modelling wall",
-        caption: "Framing risks and mitigations alongside customer journey maps.",
-        img: "assets/img/placeholder-team.svg",
-        alt: "Sticky notes and architectural diagrams on a wall",
+        title: "Process mapping wall",
+        caption: "Every workflow starts with sticky notes, arrows, and data-exchange definitions.",
+        img: "assets/img/about-story.png",
+        alt: "Process diagrams on a wall",
       },
       {
-        title: "Ops & reliability pod",
-        caption: "Live dashboards watching uptime, performance, and incident response health.",
-        img: "assets/img/placeholder-ops.svg",
-        alt: "Operations dashboard screens",
+        title: "Reliability pod",
+        caption: "Monitoring automation runtimes, costs, and anomaly alerts.",
+        img: "assets/img/about-ops.png",
+        alt: "Dashboards showing automation metrics",
       },
       {
         title: "Experiment studio",
-        caption: "Designers and engineers pair on experiments before they reach production.",
-        img: "assets/img/placeholder-labs.svg",
-        alt: "Product team ideating around laptops",
+        caption: "Pairing engineers and designers to prototype new agent behaviors.",
+        img: "assets/img/about-labs.png",
+        alt: "Product team ideating",
       },
     ],
   },
   teamIntro:
-    "Zyvrix stays intentionally small so every client works directly with the founders who design, build, and secure each release.",
+    "Zyvrix stays intentionally small so every client collaborates directly with the founders building their automations.",
 };

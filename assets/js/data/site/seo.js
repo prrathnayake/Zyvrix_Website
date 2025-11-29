@@ -1,104 +1,104 @@
 export const seo = {
   defaultKeywords:
-    "full-stack developers, cybersecurity specialists, startup app builders, api development, mobile app security, seo optimization",
+    "workflow automation, n8n experts, ai agents, api integration, custom software, web development, app development, cybersecurity consulting, seo optimisation",
   siteName: "Zyvrix",
   author: "Zyvrix",
   robots: "index, follow",
   twitterHandle: "@zyvrix",
   twitterCreator: "@zyvrix",
   themeColor: "#0f172a",
-  ogImage: "assets/img/placeholder-growth.svg",
+  ogImage: "assets/img/og-home.png",
 };
 
 export const seoContent = {
   home: {
-    title: "Zyvrix — Full-stack builds with embedded security",
+    title: "Zyvrix — Automation systems & AI agents",
     description:
-      "Zyvrix is a two-person startup delivering secure web, mobile, and API platforms with ongoing SEO and protection services.",
+      "Zyvrix designs, builds, and manages automation workflows, intelligent agents, and powerful APIs that remove repetitive work for modern teams.",
     path: "index.html",
     keywords:
-      "full-stack development duo, secure mobile app development, api hardening, seo optimisation, cybersecurity consultants",
-    image: "assets/img/placeholder-growth.svg",
+      "automation consultancy, n8n implementation partner, ai workflow builders, api integration studio, digital operations automation",
+    image: "assets/img/og-home.png",
   },
   about: {
-    title: "About Zyvrix",
+    title: "About Zyvrix automation studio",
     description:
-      "Meet Zyvrix, the startup founded by Pasan Rathnayake and Sunera Ranasooriya to blend development craftsmanship with rigorous cybersecurity.",
+      "Discover how Zyvrix blends workflow automation, AI agents, and deep system integrations to build smarter operations for clients.",
     path: "about.html",
     keywords:
-      "secure development team, security design sprints, australian dev studio, devops automation partner",
-    image: "assets/img/placeholder-team.svg",
+      "automation specialists, n8n architects, ai agent studio, integration experts",
+    image: "assets/img/og-about.png",
   },
   pricing: {
-    title: "Pricing — Zyvrix service bundles",
+    title: "Pricing — Automation programs & retainers",
     description:
-      "Review Zyvrix pricing guidance for web, mobile, API, and ongoing protection retainers backed by hands-on founders.",
+      "Explore automation, AI agent, API, and custom software programs from Zyvrix along with retainers for monitoring and optimisation.",
     path: "pricing.html",
     keywords:
-      "secure development pricing, ecommerce build cost, web maintenance retainer, seo optimisation retainers",
-    image: "assets/img/placeholder-ops.svg",
+      "workflow automation pricing, ai agent retainers, api platform cost, integration consulting fees",
+    image: "assets/img/og-pricing.png",
   },
   contact: {
-    title: "Contact Zyvrix",
+    title: "Contact Zyvrix automation experts",
     description:
-      "Start a conversation with Zyvrix to plan your next build, security audit, or optimisation retainer.",
+      "Plan your next workflow automation, AI agent rollout, or integration initiative with Zyvrix.",
     path: "contact.html",
     keywords:
-      "contact secure it developers, request security quote, talk to security developer, schedule discovery call",
-    image: "assets/img/placeholder-team.svg",
+      "contact automation partner, plan ai agent project, schedule integration consult, workflow automation quote",
+    image: "assets/img/og-contact.png",
   },
   checkout: {
-    title: "Checkout — Review your Zyvrix plan",
+    title: "Checkout — Confirm your automation build",
     description:
-      "Review the services you selected from Zyvrix before proceeding to payment.",
+      "Review the automation services you selected from Zyvrix before continuing to billing.",
     path: "checkout.html",
     keywords:
-      "secure it developers checkout, confirm web development package, add services to quote, security focused engagement review",
-    image: "assets/img/placeholder-ops.svg",
+      "automation checkout, confirm ai agent package, integration service review, workflow automation billing",
+    image: "assets/img/og-checkout.png",
   },
   payment: {
     title: "Payment — Secure billing with Zyvrix",
     description:
-      "Enter billing details to complete your engagement with Zyvrix.",
+      "Enter billing details to activate your workflow automation or AI agent engagement with Zyvrix.",
     path: "payment.html",
     keywords:
-      "secure it developers payment, pay for cybersecurity project, secure billing portal, web app development invoice",
-    image: "assets/img/placeholder-growth.svg",
+      "automation project payment, pay for ai agent build, secure billing portal, integration engagement invoice",
+    image: "assets/img/og-payment.png",
   },
   success: {
-    title: "Payment successful — Welcome to Zyvrix",
+    title: "Payment successful — Automation kickoff scheduled",
     description:
-      "Your Zyvrix engagement is confirmed. We'll reach out with next steps.",
+      "Your Zyvrix automation engagement is confirmed. We'll reach out with onboarding steps.",
     path: "success.html",
     keywords:
-      "secure it developers payment success, project kickoff confirmation, cybersecurity engagement onboarding",
-    image: "assets/img/placeholder-team.svg",
+      "automation partner payment success, workflow kickoff confirmation, ai agent onboarding",
+    image: "assets/img/og-success.png",
   },
   failed: {
-    title: "Payment issue — Zyvrix",
+    title: "Payment issue — Zyvrix automation",
     description:
-      "Something went wrong while processing your payment with Zyvrix.",
+      "Something went wrong while processing your automation engagement payment with Zyvrix.",
     path: "failed.html",
     keywords:
-      "secure it developers payment failed, retry secure payment, billing support cybersecurity agency",
-    image: "assets/img/placeholder-ops.svg",
+      "automation payment failed, retry workflow billing, ai agent invoice support",
+    image: "assets/img/og-failed.png",
   },
   detail: {
-    title: "Engagement details — Zyvrix",
+    title: "Engagement details — Zyvrix automation",
     description:
-      "Dive deeper into Zyvrix engagements and specialist services, including deliverables, pricing guidance, and recommended add-ons.",
+      "Explore Zyvrix engagements across workflow automation, AI agents, APIs, and integration programs with deliverables and add-ons.",
     path: "detail.html",
     keywords:
-      "secure it developers engagement details, security focused service breakdown, web app package inclusions, cybersecurity add ons",
-    image: "assets/img/placeholder-team.svg",
+      "automation engagement breakdown, n8n workflow services, ai agent deliverables, integration add ons",
+    image: "assets/img/og-detail.png",
   },
   legal: {
-    title: "Privacy & legal — Zyvrix",
+    title: "Privacy & legal — Zyvrix automation",
     description:
-      "Review how Zyvrix safeguards data, governs engagements, and upholds compliance commitments.",
+      "Review how Zyvrix safeguards automation data, governs AI engagements, and upholds compliance commitments.",
     path: "legal.html",
     keywords:
-      "secure it developers privacy policy, legal terms, data protection statement, cybersecurity agency compliance",
-    image: "assets/img/placeholder-ops.svg",
+      "automation studio privacy policy, ai agent legal terms, integration data protection, workflow compliance",
+    image: "assets/img/og-legal.png",
   },
 };

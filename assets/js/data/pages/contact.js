@@ -3,5 +3,5 @@ import { seoContent } from "../site/seo.js";
 export const contactPage = {
   meta: seoContent.contact,
   intro:
-    "Give us the essentials and we'll return a tailored proposal with security guidance and delivery milestones.",
+    "Tell us what needs automating—workflows, AI agents, integrations, or custom software—and we'll reply with a tailored plan plus milestones.",
 };
